@@ -11,8 +11,9 @@ title                    : "J.W"
 title_separator          : "-"
 name                     : "Jet Wang"
 description              : "朝花夕拾"
-url                      : #http://ajasonwang.github.io
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : http://ajasonwang.github.io
+# the subpath of your site, e.g. "/blog"
+baseurl                  : /blog
 # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 repository               : ajasonwang/jekyll-blog-minimal-mistakes
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
