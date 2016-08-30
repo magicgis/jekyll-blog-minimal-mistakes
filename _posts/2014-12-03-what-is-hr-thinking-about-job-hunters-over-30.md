@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "HR 怎么看待三十岁以上的基础岗位求职者"
-categories:
-tags:
+categories: 文章
+tags: 朝花夕拾
 ---
 
 

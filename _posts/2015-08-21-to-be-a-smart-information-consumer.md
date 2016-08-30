@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "做个聪明的信息消费者"
-description: ""
-category: 
-tags: []
+categories: 文章
+tags: 朝花夕拾
 ---
 
+
+---
 
 [原文链接](https://iyouport.com/archives/45954) 需翻墙
 
