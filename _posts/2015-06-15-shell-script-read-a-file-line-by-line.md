@@ -65,7 +65,7 @@ tags: [Linux]
 	$./mypipe ls -a -l | sort | wc
 	$./mypipe "ls -a -l | sort | wc "
 
-显然我要的是第2种输入，把 "ls -a -l | sort | wc " 作为整体传给我的 mypipe，来测试我的 mypipe 能不能正确识别出字符串里面的各种命令。
+显然我要的是第2种输入，把 ```ls -a -l | sort | wc ``` 作为整体传给我的 mypipe，来测试我的 mypipe 能不能正确识别出字符串里面的各种命令。
 
 如果不用 IFS 的话，还有一种方法可以得到上面第二种方法的效果：
 

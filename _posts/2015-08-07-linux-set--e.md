@@ -9,7 +9,7 @@ tags: [Linux]
 
 工作中经常在shell脚本中看到set的这两个用法，但就像生活中的很多事情，习惯导致忽视，直到出现问题才引起关注。
 
-####1. set -e
+### 1. set -e
 set命令的-e参数，linux自带的说明如下：
 
 	"Exit immediately if a simple command exits with a non-zero status."
@@ -35,7 +35,7 @@ set命令的-e参数，linux自带的说明如下：
 
 可见设置"set -e"，在脚本开发过程中可能很有帮助，而在开发完成后，特别是对于后期可能有升级的脚本，则可能是埋下了安全隐患。
 
-####2. set -o pipefail
+### 2. set -o pipefail
 对于set命令-o参数的pipefail选项，linux是这样解释的：
 
 	"If set, the return value of a pipeline is the value of the last (rightmost) command to exit with a non-zero status,or zero if all commands in the pipeline exit successfully. This option is disabled by default."

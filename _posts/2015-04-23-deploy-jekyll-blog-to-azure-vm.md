@@ -76,7 +76,7 @@ tags: azure
 9，启动apache就发现博客可以访问了，现在设置定时任务自动克隆代码更新博客
 
 	#add crontab
-	0 5,9 * * * rm -rf /tmp/xxx.github.io; cd /tmp; git clone https://github.com/xxx/xxx.github.io.git; mv /tmp/xxx.github.io/* /var/www/html/ -rf;
+	0 5,9 * * * cd /var/www/html/; git pull;
 
 	#check cron service status
 	initctl start cron

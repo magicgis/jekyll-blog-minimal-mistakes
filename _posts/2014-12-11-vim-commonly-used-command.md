@@ -168,17 +168,19 @@ set modeline
 
 modeline 里可以放的指令不限一个，所以我.py 档案在档尾都有这麽一行的 modeline
 
-# vim: set ai et nu sw=4 ts=4 tw=79:
+```vim: set ai et nu sw=4 ts=4 tw=79:```
 
 然后创建或打开一个文件，在文件的首行/尾行（必须），写一行当前这个文件里面语言所支持的注释，例如写python就是#，写php就//或/**/，然后在里面加上modeline识别的固定格式，举例：
 
-# vim: set expandtab ts=4 sts=4 sw=4 :
+```vim: set expandtab ts=4 sts=4 sw=4 :```
 
 这句注释中，'#'后面、"vim:"前面的空格是必须的，结尾的':'也是必须的，这些是modeline所识别的。中间就是你所熟悉的vimrc中的设置了。上面这样的设置使得这个文件在打开编辑时默认为使用空格展开\t，并且一个\t输出的长度为4个空格。
 
 再举例一个thrift类型的文件设置：
 
+```
 /** vim: set filetype=java ts=2 sts=2 sw=2 fdm=indent et : */
+```
 
 因为vim暂时没有支持.thrift这个filetype，并且thrift中的习惯缩进长度一般为2。设置成java的filetype来编辑thrift文件还不错，/**/注释在回车时还能自动生成*号。后面set的一串2，就能满足thrift的缩进习惯。
 
