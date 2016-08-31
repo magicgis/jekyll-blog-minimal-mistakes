@@ -7,11 +7,11 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "J.W"
+title                    : "朝花夕拾"
 title_separator          : "-"
 name                     : "Jet Wang"
 description              : "朝花夕拾"
-url                      : "http://localhost:4000" #"http://ajasonwang.github.io"
+url                      : "http://10.86.18.11:5000"
 # the subpath of your site, e.g. "/blog"
 baseurl                  : #
 # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -20,9 +20,9 @@ teaser                   : # filename of teaser fallback teaser image placed in 
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "ajasonwang" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -49,17 +49,19 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
+
 # SEO Related
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
+
 # Social Sharing
 twitter:
-  username               :
+  username               : "mogging"
 facebook:
-  username               :
+  username               : "loveamongtheruins"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -70,11 +72,12 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
+
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : true # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-44254436-3"
 
 
 # Site Author
@@ -85,26 +88,26 @@ author:
   location         : "Shenzhen"
   email            : "ajasonwang@gmail.com"
   uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           :
-  google_plus      :
+  bitbucket        : "ajasonwang"
+  codepen          : "ajasonwang"
+  dribbble         : "ajasonwang"
+  flickr           : "ooomygod"
+  facebook         : "loveamongtheruins"
+  foursquare       : "mogging"
+  github           : "ajasonwang"
+  google_plus      : "AmonNg"
   keybase          :
-  instagram        :
-  lastfm           :
-  linkedin         :
-  pinterest        :
+  instagram        : "ajasonwang"
+  lastfm           : "mogging"
+  linkedin         : "jet-wang-b8908b10"
+  pinterest        : "ajasonwang"
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : "793507/jet-wang"
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "mogging"
   vine             :
-  weibo            :
+  weibo            : "ajasonwang"
   xing             :
   youtube          :
 
@@ -170,10 +173,10 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:title #/:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: CN # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
@@ -228,6 +231,7 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
     
 defaults:
   # _posts
@@ -235,7 +239,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: post #single
+      layout: single
       read_time: true
       comments: true
       share: true
